@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  labels:
+    run: mydreams
+  name: mydreams
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      run: mydreams
+  template:
+    metadata:
+      labels:
+        run: mydreams
+    spec:
+      containers:
+      - image: mydreams
+        imagePullPolicy: Never
+        name: mydreams
+        ports:
+        - containerPort: 3000
+          protocol: TCP

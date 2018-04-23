@@ -1,27 +1,30 @@
-Welcome to the Glitch BETA
-==========================
+# Kubernetes 101
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+In this workshop, you’ll learn the basics of Kubernetes and how to orchestrate containers across a variety of cloud platforms. We will illuminate why this technology is used, and the specific history of VMs, containers, and cloud architecture that has led to its necessity. From there, we will introduce key concepts and tools for using Kubernetes. By the end of the workshop, students will be able to deploy a web application using Kubernetes. 
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+This is a great skill to learn for anybody interested in software operations, data science, infrastructure engineering, building a Continuous Integration pipeline, or starting a tech company. 
 
-Find out more [about Glitch](https://glitch.com/about).
+For Girl Develop It.
 
+View the slides and labs [here](https://docs.google.com/presentation/d/1-ho7oyrTxiEzlTZdKDoTFyS7AP6-QCUewaoOzXU-tCY/edit#slide=id.p).
 
-Your Project
-------------
+## What we'll cover
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
+* A brief history of Virtual Machines and Containers
+* What is Kubernetes, and why would I use it?
+* Deployments, Pods, and Services
+* Deploy an application with Kubernetes
 
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+## Prerequisites
+* Basic understanding of containers (add link for students to review)
+* Basic undersatnding of the Unix Command Line Interface (Terminal)
 
+## To Install Dependencies
 
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
+If you on OS X and have homebrew, run `brew bundle`.
 
-\ ゜o゜)ノ
+Otherwise, you'll need: 
+* [Docker Community Edition](https://www.docker.com/community-edition)
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)
+* [Kubernetes kubectl](https://kubernetes.io/docs/getting-started-guides/minikube/)
